@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>details</key>
+		<string>2016年07月05日</string>
+		<key>content</key>
+		<string>微博界面</string>
+		<key>className</key>
+		<string>HGJ_WeiBoController</string>
+	</dict>
+	<dict>
+		<key>details</key>
+		<string>2016年08月05日</string>
+		<key>content</key>
+		<string>聊天界面</string>
+		<key>className</key>
+		<string>HGJChattingController</string>
+	</dict>
+	<dict>
+		<key>details</key>
+		<string>2016年08月12日</string>
+		<key>content</key>
+		<string>简易私人通讯录</string>
+		<key>className</key>
+		<string>Adress_LoginController</string>
+	</dict>
+	<dict>
+		<key>details</key>
+		<string>2016年08月25日</string>
+		<key>content</key>
+		<string>手势解锁</string>
+		<key>className</key>
+		<string>Quartz2D_GestureLockController</string>
+	</dict>
+	<dict>
+		<key>details</key>
+		<string>2016年08月30日</string>
+		<key>content</key>
+		<string>画板</string>
+		<key>className</key>
+		<string>Quartz2D_PaintingBoardController</string>
+	</dict>
+</array>
+</plist>
