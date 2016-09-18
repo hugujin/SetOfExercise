@@ -78,7 +78,7 @@
             
         }];
         
-        UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"点击删除删除该会话" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"点击删除移除该会话" preferredStyle:UIAlertControllerStyleAlert];
         [alert addAction:delete];
         [alert addAction:cancle];
         
