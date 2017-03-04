@@ -42,5 +42,13 @@
 		<key>className</key>
 		<string>Quartz2D_PaintingBoardController</string>
 	</dict>
+	<dict>
+		<key>details</key>
+		<string>2017年03月2日</string>
+		<key>content</key>
+		<string>多图下载</string>
+		<key>className</key>
+		<string>PhotoBrowser</string>
+	</dict>
 </array>
 </plist>

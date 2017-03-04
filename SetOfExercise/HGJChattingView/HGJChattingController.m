@@ -6,13 +6,6 @@
 //  Copyright © 2016年 胡古斤. All rights reserved.
 //
 
-/*
- 
-    新增：输入,删除功能
- 
-    日期：2016.9.13
- 
- */
 
 #import "HGJChattingController.h"
 #import "HGJChattingCell.h"
@@ -43,7 +36,7 @@
     /* 输入功能  2016.9.13 */
     
     //避免块中循环引用
-    UITableView * tView = self.tableView;
+    __weak UITableView * tView = self.tableView;
     
     //1.设置回调函数
     self.delAction = ^(NSIndexPath * index) {
@@ -85,20 +78,8 @@
         [((UINavigationController *)[UIApplication sharedApplication].delegate.window.rootViewController).viewControllers.lastObject presentViewController:alert animated:YES completion:nil];
     };
     
-    //2.创建输入栏
-    UIView * inputView = [self creatInput];
-    [[UIApplication sharedApplication].delegate.window addSubview:inputView];
-    
-    /* 输入功能  2016.9.13 */
-    
 }
 
-
-
-/** 页面消失删除输入栏 */
-- (void)viewWillDisappear:(BOOL)animated {
-    [[UIApplication sharedApplication].delegate.window.subviews.lastObject removeFromSuperview];
-}
 
 
 #pragma mark - UITableViewDataSource
@@ -168,36 +149,6 @@
 
 #pragma mark - PrivateFunctions
 
-/** 创建输入栏 */
-- (UIView *)creatInput {
-    CGFloat sWidth = [UIScreen mainScreen].bounds.size.width;
-    CGFloat sHeight = [UIScreen mainScreen].bounds.size.height;
-    CGFloat height = 44;
-    
-    UIView * inputView = [[UIView alloc]initWithFrame:CGRectMake(0, sHeight - height, sWidth, height)];
-    
-    //输入栏
-    UITextField * field = [[UITextField alloc]initWithFrame:CGRectMake(5, 5, sWidth - height, height - 10)];
-    field.borderStyle = UITextBorderStyleRoundedRect;
-    self.inputField = field;
-    self.inputField.delegate = self;
-    
-    //按钮
-    UIButton * btn = [[UIButton alloc]initWithFrame:CGRectMake(sWidth - height, 0, height, height)];
-    [btn setTitle:@"发送" forState:UIControlStateNormal];
-    btn.backgroundColor = [UIColor lightGrayColor];
-    [btn addTarget:self action:@selector(send) forControlEvents:UIControlEventTouchUpInside];
-    
-    [inputView addSubview:field];
-    [inputView addSubview:btn];
-    
-    inputView.backgroundColor = [UIColor lightGrayColor];
-    
-    return inputView;
-    
-}
-
-
 /**
  *  懒加载表视图数据 */
 - (NSArray *)messageArray
@@ -226,13 +177,6 @@
     self.tableView.backgroundColor = [UIColor colorWithRed:225 / 255.0 green:213 / 255.0 blue:146 / 255.0 alpha:1];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.allowsSelection = false;
-    
-    /* 输入功能  2016.9.13 */
-    
-    //更改样式,留出输入栏高度
-    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 44, 0);
-    
-    /* 输入功能  2016.9.13 */
 }
 
 

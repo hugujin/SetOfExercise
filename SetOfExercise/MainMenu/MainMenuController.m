@@ -59,6 +59,11 @@
     
     UIViewController * controller;
     controller = [[NSClassFromString(model.className) alloc]init];
+    
+    if ([model.className isEqualToString:@"PhotoBrowser"]) {
+        controller = [[PhotoBrowser alloc] init];
+    }
+    
     [self.navigationController pushViewController:controller animated:true];
     
 }
