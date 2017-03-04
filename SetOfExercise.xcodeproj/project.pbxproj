@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		39EC4EDEB4A93F1C5DA0B042 /* Pods_SetOfExercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070A406A2F4C63FE0A84036A /* Pods_SetOfExercise.framework */; };
+		5405856F1E6A66D900B7F55D /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5405856B1E6A66D900B7F55D /* AnimalCell.swift */; };
+		540585701E6A66D900B7F55D /* AnimalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5405856C1E6A66D900B7F55D /* AnimalCell.xib */; };
+		540585711E6A66D900B7F55D /* animals.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5405856D1E6A66D900B7F55D /* animals.plist */; };
+		540585721E6A66D900B7F55D /* PhotoBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5405856E1E6A66D900B7F55D /* PhotoBrowser.swift */; };
 		545B38D21D5DB14200A1B5AD /* AdressBookStorybord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545B38D11D5DB14200A1B5AD /* AdressBookStorybord.storyboard */; };
 		545B38D51D5DB1A400A1B5AD /* Adress_LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545B38D41D5DB1A400A1B5AD /* Adress_LoginController.m */; };
 		545B38DB1D5DBC8000A1B5AD /* Adress_ContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 545B38DA1D5DBC8000A1B5AD /* Adress_ContactController.m */; };
@@ -69,6 +73,10 @@
 /* Begin PBXFileReference section */
 		070A406A2F4C63FE0A84036A /* Pods_SetOfExercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SetOfExercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		512E88EC7CB546A9AC18A688 /* Pods-SetOfExercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SetOfExercise.release.xcconfig"; path = "Pods/Target Support Files/Pods-SetOfExercise/Pods-SetOfExercise.release.xcconfig"; sourceTree = "<group>"; };
+		5405856B1E6A66D900B7F55D /* AnimalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
+		5405856C1E6A66D900B7F55D /* AnimalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimalCell.xib; sourceTree = "<group>"; };
+		5405856D1E6A66D900B7F55D /* animals.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = animals.plist; sourceTree = "<group>"; };
+		5405856E1E6A66D900B7F55D /* PhotoBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowser.swift; sourceTree = "<group>"; };
 		545B38D11D5DB14200A1B5AD /* AdressBookStorybord.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AdressBookStorybord.storyboard; sourceTree = "<group>"; };
 		545B38D31D5DB1A400A1B5AD /* Adress_LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Adress_LoginController.h; path = ../../AddContact/Controller/Adress_LoginController.h; sourceTree = "<group>"; };
 		545B38D41D5DB1A400A1B5AD /* Adress_LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Adress_LoginController.m; path = ../../AddContact/Controller/Adress_LoginController.m; sourceTree = "<group>"; };
@@ -164,6 +172,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5405856A1E6A66D900B7F55D /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				5405856B1E6A66D900B7F55D /* AnimalCell.swift */,
+				5405856C1E6A66D900B7F55D /* AnimalCell.xib */,
+				5405856D1E6A66D900B7F55D /* animals.plist */,
+				5405856E1E6A66D900B7F55D /* PhotoBrowser.swift */,
+			);
+			path = PhotoBrowser;
+			sourceTree = "<group>";
+		};
 		545B38C01D5DB10900A1B5AD /* AdressBook */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,6 +405,7 @@
 		547750D31D543BD400CCAB1C /* SetOfExercise */ = {
 			isa = PBXGroup;
 			children = (
+				5405856A1E6A66D900B7F55D /* PhotoBrowser */,
 				546FC5941D5C522000A11B30 /* Other */,
 				546FC58B1D5C521700A11B30 /* MainMenu */,
 				5477510A1D543E7500CCAB1C /* WeiBo */,
@@ -559,6 +579,7 @@
 					547750D01D543BD400CCAB1C = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = R79P3TX9LW;
+						LastSwiftMigration = 0820;
 					};
 					547750E91D543BD500CCAB1C = {
 						CreatedOnToolsVersion = 7.3;
@@ -609,6 +630,8 @@
 				545CF3761D753BA10041467F /* Quartz2D_GestureLock.xib in Resources */,
 				547751441D545D8100CCAB1C /* HGJ_PickerView.xib in Resources */,
 				547751141D543E7500CCAB1C /* HGJ_StateCell.xib in Resources */,
+				540585711E6A66D900B7F55D /* animals.plist in Resources */,
+				540585701E6A66D900B7F55D /* AnimalCell.xib in Resources */,
 				547751081D543CD100CCAB1C /* Podfile in Resources */,
 				547750DF1D543BD400CCAB1C /* MainMenu.storyboard in Resources */,
 			);
@@ -696,7 +719,9 @@
 				545B38D51D5DB1A400A1B5AD /* Adress_LoginController.m in Sources */,
 				547751131D543E7500CCAB1C /* HGJ_StateCell.m in Sources */,
 				547751451D545D8100CCAB1C /* HGJ_TestControllerViewController.swift in Sources */,
+				5405856F1E6A66D900B7F55D /* AnimalCell.swift in Sources */,
 				547751151D543E7500CCAB1C /* HGJ_StateModel.m in Sources */,
+				540585721E6A66D900B7F55D /* PhotoBrowser.swift in Sources */,
 				545CF37D1D755E9B0041467F /* Quartz2D_PaintingBoardController.m in Sources */,
 				547751511D54716B00CCAB1C /* HGJChattingCell.m in Sources */,
 				547751161D543E7500CCAB1C /* HGJ_WeiBoController.m in Sources */,
@@ -854,6 +879,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SetOfExercise/SetOfExercise-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -868,6 +894,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.PuYuZhongXue.SetOfExercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SetOfExercise/SetOfExercise-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

@@ -27,10 +27,10 @@ class HGJ_TestControllerViewController: UIViewController, UIPickerViewDelegate, 
 //        self.chooseProvince!.delegate = self
 //        self.chooseProvince!.dataSource = self
         self.view.addSubview(self.chooseProvince!)
-        self.chooseProvince!.backgroundColor = UIColor.greenColor()
+        self.chooseProvince!.backgroundColor = UIColor.green
         
 //        self.chooseProvince?.showAll()
-        self.chooseProvince!.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height)
+        self.chooseProvince!.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
     }
     
     
@@ -41,11 +41,11 @@ class HGJ_TestControllerViewController: UIViewController, UIPickerViewDelegate, 
     
     //MARK: - UIPickerViewDatasource & UIPickerViewDelegate
     
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return 32
     }
     
@@ -53,7 +53,7 @@ class HGJ_TestControllerViewController: UIViewController, UIPickerViewDelegate, 
 //        return 30
 //    }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return "深圳市"
     }
     
@@ -64,9 +64,9 @@ class HGJ_TestControllerViewController: UIViewController, UIPickerViewDelegate, 
     
     func showPickerView(){
         
-        UIView.animateWithDuration(0.3) { 
-            self.chooseProvince?.frame = CGRectMake(0, UIScreen.mainScreen().bounds.height - 200, UIScreen.mainScreen().bounds.width, 200)
-        }
+        UIView.animate(withDuration: 0.3, animations: { 
+            self.chooseProvince?.frame = CGRect(x: 0, y: UIScreen.main.bounds.height - 200, width: UIScreen.main.bounds.width, height: 200)
+        }) 
     }
     
     

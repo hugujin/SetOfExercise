@@ -12,10 +12,10 @@ class HGJ_PickerView: UIView {
     
     
     //MAKR: - Property
-    let screenWidth = UIScreen.mainScreen().bounds.width
-    let screenHeight = UIScreen.mainScreen().bounds.height
-    let showFrame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height)
-    let dismissFrame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height)
+    let screenWidth = UIScreen.main.bounds.width
+    let screenHeight = UIScreen.main.bounds.height
+    let showFrame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+    let dismissFrame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
     
     var delegate:UIPickerViewDelegate?
     var dataSource: UIPickerViewDataSource?
@@ -28,11 +28,11 @@ class HGJ_PickerView: UIView {
     
     //MARK: - DesignedInital
     override init(frame: CGRect) {
-        super.init(frame: CGRectMake(0, UIScreen.mainScreen().bounds.height, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
+        super.init(frame: CGRect(x: 0, y: UIScreen.main.bounds.height, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
     }
 
     convenience init() {
-        self.init(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height))
+        self.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
 //        self.pickerView.delegate = self.delegate
 //        self.pickerView.dataSource = self.dataSource
     }
@@ -64,16 +64,16 @@ class HGJ_PickerView: UIView {
     //MARK: - PraviteFucntions
     func dismissAll()
     {
-        UIView.animateWithDuration(0.3) { 
+        UIView.animate(withDuration: 0.3, animations: { 
             self.frame = self.dismissFrame
-        }
+        }) 
     }
     
     func showAll()
     {
-        UIView.animateWithDuration(0.3) { 
+        UIView.animate(withDuration: 0.3, animations: { 
            self.frame = self.showFrame
-        }
+        }) 
         
     }
     
