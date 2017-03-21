@@ -63,6 +63,9 @@
     if ([model.className isEqualToString:@"PhotoBrowser"]) {
         controller = [[PhotoBrowser alloc] init];
     }
+    if ([model.className isEqualToString:@"TestViewController"]) {
+        controller = [[TestViewController alloc] init];
+    }
     
     [self.navigationController pushViewController:controller animated:true];
     

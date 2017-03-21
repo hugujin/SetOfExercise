@@ -51,6 +51,9 @@
 		547751581D54722200CCAB1C /* HGJChattingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 547751571D54722200CCAB1C /* HGJChattingCell.xib */; };
 		548CC2D71D5EF97C004DEDC2 /* Adress_AddContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 548CC2D61D5EF97C004DEDC2 /* Adress_AddContactController.m */; };
 		548CC2DA1D5F1A1B004DEDC2 /* Adress_EditContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 548CC2D91D5F1A1B004DEDC2 /* Adress_EditContactController.m */; };
+		54C80A0A1E80C9EA000899E6 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C80A081E80C9EA000899E6 /* TestViewController.swift */; };
+		54C80A0B1E80C9EA000899E6 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54C80A091E80C9EA000899E6 /* TestViewController.xib */; };
+		54C80A0F1E80CCB3000899E6 /* UIAlertController+HGJAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C80A0E1E80CCB3000899E6 /* UIAlertController+HGJAlertController.swift */; };
 		54D7655C1D78252400A6D70F /* Quartz2D_HandleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54D7655B1D78252400A6D70F /* Quartz2D_HandleImageView.m */; };
 /* End PBXBuildFile section */
 
@@ -144,6 +147,9 @@
 		548CC2D61D5EF97C004DEDC2 /* Adress_AddContactController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Adress_AddContactController.m; sourceTree = "<group>"; };
 		548CC2D81D5F1A1B004DEDC2 /* Adress_EditContactController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adress_EditContactController.h; sourceTree = "<group>"; };
 		548CC2D91D5F1A1B004DEDC2 /* Adress_EditContactController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Adress_EditContactController.m; sourceTree = "<group>"; };
+		54C80A081E80C9EA000899E6 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		54C80A091E80C9EA000899E6 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		54C80A0E1E80CCB3000899E6 /* UIAlertController+HGJAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+HGJAlertController.swift"; sourceTree = "<group>"; };
 		54D7655A1D78252400A6D70F /* Quartz2D_HandleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quartz2D_HandleImageView.h; sourceTree = "<group>"; };
 		54D7655B1D78252400A6D70F /* Quartz2D_HandleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quartz2D_HandleImageView.m; sourceTree = "<group>"; };
 		939AEC44C572A3FCB33C3B03 /* Pods-SetOfExercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SetOfExercise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SetOfExercise/Pods-SetOfExercise.debug.xcconfig"; sourceTree = "<group>"; };
@@ -189,6 +195,7 @@
 		540585731E6A684F00B7F55D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				54C80A0E1E80CCB3000899E6 /* UIAlertController+HGJAlertController.swift */,
 				540585741E6A689A00B7F55D /* Runtime */,
 			);
 			path = Tools;
@@ -425,8 +432,9 @@
 		547750D31D543BD400CCAB1C /* SetOfExercise */ = {
 			isa = PBXGroup;
 			children = (
+				54C80A081E80C9EA000899E6 /* TestViewController.swift */,
+				54C80A091E80C9EA000899E6 /* TestViewController.xib */,
 				540585731E6A684F00B7F55D /* Tools */,
-				5405856A1E6A66D900B7F55D /* PhotoBrowser */,
 				546FC5941D5C522000A11B30 /* Other */,
 				546FC58B1D5C521700A11B30 /* MainMenu */,
 				5477510A1D543E7500CCAB1C /* WeiBo */,
@@ -435,6 +443,7 @@
 				545B38C01D5DB10900A1B5AD /* AdressBook */,
 				545CF36E1D753BA10041467F /* GestureLock */,
 				545CF37A1D755DD80041467F /* PaintingBoard */,
+				5405856A1E6A66D900B7F55D /* PhotoBrowser */,
 				547750D41D543BD400CCAB1C /* Supporting Files */,
 			);
 			path = SetOfExercise;
@@ -649,6 +658,7 @@
 				547751461D545D8100CCAB1C /* HGJ_TestControllerViewController.xib in Resources */,
 				547751171D543E7500CCAB1C /* state.plist in Resources */,
 				545CF3761D753BA10041467F /* Quartz2D_GestureLock.xib in Resources */,
+				54C80A0B1E80C9EA000899E6 /* TestViewController.xib in Resources */,
 				547751441D545D8100CCAB1C /* HGJ_PickerView.xib in Resources */,
 				547751141D543E7500CCAB1C /* HGJ_StateCell.xib in Resources */,
 				540585711E6A66D900B7F55D /* animals.plist in Resources */,
@@ -738,11 +748,13 @@
 				545CF3821D756E500041467F /* Quartz2D_PaintingView.m in Sources */,
 				545CF3791D753BA10041467F /* UIImage+Quartz2D_Portrait.m in Sources */,
 				547751431D545D8100CCAB1C /* HGJ_PickerView.swift in Sources */,
+				54C80A0F1E80CCB3000899E6 /* UIAlertController+HGJAlertController.swift in Sources */,
 				545B38D51D5DB1A400A1B5AD /* Adress_LoginController.m in Sources */,
 				547751131D543E7500CCAB1C /* HGJ_StateCell.m in Sources */,
 				547751451D545D8100CCAB1C /* HGJ_TestControllerViewController.swift in Sources */,
 				5405856F1E6A66D900B7F55D /* AnimalCell.swift in Sources */,
 				547751151D543E7500CCAB1C /* HGJ_StateModel.m in Sources */,
+				54C80A0A1E80C9EA000899E6 /* TestViewController.swift in Sources */,
 				540585721E6A66D900B7F55D /* PhotoBrowser.swift in Sources */,
 				545CF37D1D755E9B0041467F /* Quartz2D_PaintingBoardController.m in Sources */,
 				547751511D54716B00CCAB1C /* HGJChattingCell.m in Sources */,

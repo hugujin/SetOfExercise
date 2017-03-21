@@ -4,6 +4,14 @@
 <array>
 	<dict>
 		<key>details</key>
+		<string>2017年03月21日</string>
+		<key>content</key>
+		<string>测试用</string>
+		<key>className</key>
+		<string>TestViewController</string>
+	</dict>
+	<dict>
+		<key>details</key>
 		<string>2016年07月05日</string>
 		<key>content</key>
 		<string>微博界面</string>
